@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+.wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    font-size: 1.5rem ;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-end;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+#hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg-image {
+    background-image: url(../images/hands-typing.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(70%);
+}
+
+h1 {
+    max-width: 60%;
+    background-color: #000;
+    filter: opacity(50%);
+    color: #fff;
+    filter: opacity(100%);
+    text-shadow:#000 ;
+}
+
+
+
+
+
+.wrapper-2 {
+    max-width: 940px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: auto ;
+    margin-bottom: auto;
+}
+
+img .wrapper-2 {
+    
+
+}
+
+
+
+
+
+.wrapper-3 {
+    max-width: 940px;
+    background-color: #fafafa;
+    
+}
+
+h2 {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.grid article {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid a:link,
+.grid a:visited {
+  display: inline-block;
+  padding: .8em 1em;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 4px;
+  
+  margin-top: auto;
+}
+
+.grid a:hover,
+.grid a:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+
+
+
+
+.wrapper-4 {
+    max-width: 940px;
+}
+
+.wrapper-4 h2 {
+    max-width: 100%;
+    text-align: center;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+        "div1 div1 div1 div2 div2 div2"
+        "div3 div3 div4 div4 div5 div5"
+    ;
+}
+
+.grid-2 .img:nth-child(1) {
+    grid-area: div1;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
