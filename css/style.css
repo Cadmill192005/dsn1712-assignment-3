@@ -5,6 +5,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.4;
+    font-size: 1.5rem;
 }
 
 header {
@@ -63,44 +64,49 @@ nav a {
 
 h1 {
     max-width: 60%;
-    background-color: #000;
-    filter: opacity(50%);
+    background-color: rgba(0,0,0,0.5);
     color: #fff;
-    filter: opacity(100%);
-    text-shadow:#000 ;
+    font-size: 2rem;
+    text-shadow: #000;
 }
 
 
 
 
 
-.wrapper-2 {
-    max-width: 940px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    margin-top: auto ;
-    margin-bottom: auto;
+#about-me .wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   max-width: 100%;
+   padding: 20px;
 }
 
-img .wrapper-2 {
-    
+#about-me h2 {
+    font-size: 2rem;
+}
 
+
+#about-me img {
+    align-items: end;
 }
 
 
 
 
 
-.wrapper-3 {
-    max-width: 940px;
+
+#services .wrapper {
     background-color: #fafafa;
+    max-width: 100%;
     
 }
 
-h2 {
+#services h2 {
     max-width: 100%;
     text-align: center;
+    padding: 20px;
+    font-size: 2rem;
 
 }
 
@@ -109,12 +115,17 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
+}
+
+h3 {
+    font-size: 1.7rem ;
 }
 
 .grid article {
-    display: flex;
-    flex-direction: column;
+  background-color: #fff; 
+
+
 }
 
 .grid a:link,
@@ -126,7 +137,6 @@ h2 {
   text-decoration: none;
   border: 2px solid #000;
   border-radius: 4px;
-  
   margin-top: auto;
 }
 
@@ -140,29 +150,49 @@ h2 {
 
 
 
-.wrapper-4 {
-    max-width: 940px;
-}
 
-.wrapper-4 h2 {
+#work {
     max-width: 100%;
     text-align: center;
 }
 
-.grid-2 {
+#work h2 {
+    font-size: 2rem;
+}
+
+#work .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 0;
 
     grid-template-areas: 
-        "div1 div1 div1 div2 div2 div2"
-        "div3 div3 div4 div4 div5 div5"
+        "div1 div1 div2 div2"
+        "div3 div3 div4 div5"
+        "div3 div3 div4 div5"
     ;
 }
 
-.grid-2 .img:nth-child(1) {
+#work .grid .img:nth-child(1) {
     grid-area: div1;
 }
+
+#work .grid .img:nth-child(2) {
+    grid-area: div2;
+}
+
+#work .grid .img:nth-child(3) {
+    grid-area: div3;
+}
+
+#work .grid .img:nth-child(4) {
+    grid-area: div4;
+}
+
+#work .grid .img:nth-child(5) {
+    grid-area: div5;
+}
+
 
 
 footer {
